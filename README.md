@@ -30,7 +30,7 @@ Generalized zero-shot learning models (GZSL) aim to recognize samples from seen 
 <br><br>
 
 ## Problem Statement
-<p align="center"><img src="Image/problem.png" width="400"></p>
+<p align="center"><img src="Image/problem.png" width="500"></p>
 
 To compensate for the imbalanced classification problems, our method has been adopted to generate samples (i.e. images or visual features) for unseen classes by leveraging their semantic representations. In addition to the issue of semantic imbalance, we have observed instance shift problems in zero-shot learning. Instance shift refers to the significant differences among instances within the same class. For example, substantial variations exist among bird instances of the same class in the CUB dataset. Our model aims to solve the two shifting problems. We must also solve the redundancy problem of previous VAE and GAN structures and the semantic imbalance. We introduced a dual learning framework that utilises CVAE and CGAN with an added classifier to generate more distinctive visual features for unseen classes. But this structure is unnecessary, so we devised a unique VAEGAN.
 
@@ -42,7 +42,7 @@ To compensate for the imbalanced classification problems, our method has been ad
 
 ### <u>Illustration of the Overall Scheme</u>
 
-<p align="center"><img src="Image/Method.png" width="850"></p>
+<p align="center"><img src="Image/Method.png" width="950"></p>
 
 
 
@@ -57,7 +57,7 @@ Regarding basic visual features and visual extraction, we utilize the pre-traine
 
 
 
-<p align="center"><img src="Image/result.png" width="800"></p>
+<p align="center"><img src="Image/result.png" width="850"></p>
 
 
 
