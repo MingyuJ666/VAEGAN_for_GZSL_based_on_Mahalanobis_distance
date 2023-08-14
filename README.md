@@ -48,7 +48,7 @@ To compensate for the imbalanced classification problems, our method has been ad
 
 ### <u> Algorithms </u>
 
-<p align="center"><img src="Image/ALG.png" width="370">&nbsp</p>
+<p align="center"><img src="Image/zls" width="370">&nbsp</p>
 
 ## Implementation Details
 Regarding basic visual features and visual extraction, we utilize the pre-trained Resnet101 and Bert to extract the images' visual and semantic features and generate a visual feature vector (1 * 1000) and a semantic feature vector (1 * 768), respectively. These two vectors can be catted and converted linearly into a (1 * 3 * 256 * 256) vector to train a joint representation of images and texts. The images' fused visual and semantic feature vectors are further processed using a VAE (Variational Autoencoder) architecture to obtain a new latent feature vector. Finally, the obtained latent feature vector is fed through Discriminator A, resulting in a (1 * 900) dimensional vector. In the second stage, the image vector goes through Discriminator B and gets a (1 * 900) dimensional vector like stage 1. Our implementation is achieved by PyTorch and optimized by ADAM optimizer. We set the learning rate as 1e-3. 
