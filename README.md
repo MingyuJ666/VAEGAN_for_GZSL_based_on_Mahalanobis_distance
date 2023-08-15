@@ -57,7 +57,7 @@ Regarding basic visual features and visual extraction, we utilize the pre-traine
 
 
 
-<p align="center"><img src="Image/result.png" width="850"></p>
+<p align="center"><img src="Image/result.JPG" width="850"></p>
 
 
 
